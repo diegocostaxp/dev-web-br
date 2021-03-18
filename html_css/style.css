@@ -9,4 +9,9 @@ body{
     color: FireBrick;
 }#principal{
     color: black;
+    text-indent: 15px;
+}
+#TEXTO{
+    text-align: justify;
+    
 }
