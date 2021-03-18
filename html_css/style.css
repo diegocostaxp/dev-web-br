@@ -1,3 +1,8 @@
+body{
+    background-image: url(../image/open_graph_logo.png); 
+    background-attachment: fixed;
+}
+
 #Título{
     color: blue;
 }#Subtítulo{
