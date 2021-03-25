@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color:black;
 }
 .conteiner{
     max-width: 1000px;
@@ -19,4 +18,35 @@ header{
 }
 .title{
     font-size: 26px;
+}
+section{
+    padding: 150px;
+    background-image: url("../image/mentoria.jpeg");
+    background-size: cover;
+    overflow: hidden;
+}
+.formcontainer{
+    max-width: 230px;
+    background-color:rgb(216, 210, 210);
+    padding: 30px;
+    float: left;
+}
+.mb{
+    margin-bottom: 25px;
+    /* margin-inline-start: auto; */
+    /* margin-top: auto; */
+}
+h2{
+    font-size: 16px;
+}
+input,select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    color:blue;
+    background-color: rgb(147, 147, 235);
 }
