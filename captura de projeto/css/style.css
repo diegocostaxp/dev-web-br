@@ -11,7 +11,7 @@ body{
     margin: auto;
 }
 header{
-    background-color: blue;
+    background-color: rgb(128, 84, 216);
     text-align: center;
     color: white;
     padding: 10px;
@@ -20,21 +20,23 @@ header{
     font-size: 26px;
 }
 section{
-    padding: 150px;
-    background-image: url("../image/mentoria.jpeg");
+    padding: 20px;
+    background-image: url("../image/meeting-cover-1.jpeg");
     background-size: cover;
     overflow: hidden;
 }
 .formcontainer{
     max-width: 230px;
     background-color:rgb(216, 210, 210);
-    padding: 30px;
-    float: left;
+    padding: 20px;
+    float: right;
 }
 .mb{
-    margin-bottom: 25px;
-    /* margin-inline-start: auto; */
-    /* margin-top: auto; */
+    margin-bottom: 15px;
+    margin-inline-start: initial;
+    margin-top: auto;
+    text-align: auto;
+    text-size-adjust: auto;
 }
 h2{
     font-size: 16px;
@@ -42,11 +44,41 @@ h2{
 input,select{
     width: 100%;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 10px;
     border: none;
     margin-bottom: 10px;
 }
 input[type="submit"]{
-    color:blue;
-    background-color: rgb(147, 147, 235);
+    color:rgb(255, 255, 255);
+    background-color:rgb(170, 152, 204);  
+    font-weight: bold;  
+}
+select{
+    /* -moz-appearance: none; */
+    /* -webkit-appearance: none; */
+    /* -appearance:none ; */
+    /* background-image: url(../image/ico.png); */
+    /* background-repeat: no-repeat; */
+    /* background-position: cal(100% -10px)center; */
+}
+footer{
+    background-color:#202121 ;
+    padding: 40px;
+    text-align: center;
+}
+.picture{
+    width: 160px;
+}
+.description{
+    display: inline-block;
+    text-align: right;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+.description p, .description{
+    margin-bottom: 20px;
+}
+.description h3{
+    font-size: 24px;
 }
