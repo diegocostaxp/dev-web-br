@@ -33,8 +33,8 @@ section{
 }
 .mb{
     margin-bottom: 15px;
-    text-align: justify;
-    word-spacing: normal;
+    /* text-align: justify; */
+    /* word-spacing: normal; */
 }
 h2{
     font-size: 18px;
@@ -51,14 +51,6 @@ input[type="submit"]{
     color: whitesmoke;
     background-color: rgb(116, 116, 245);  
     font-weight: bold;  
-}
-select{
-    /* -moz-appearance: none; */
-    /* -webkit-appearance: none; */
-    /* -appearance:none ; */
-    /* background-image: url(../image/ico.png); */
-    /* background-repeat: no-repeat; */
-    /* background-position: cal(100% -10px)center; */
 }
 footer{
     background-color:#202121 ;
