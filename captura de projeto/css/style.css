@@ -19,6 +19,7 @@ header{
     font-size: 28px;
     color: whitesmoke;
 }
+
 section{
     padding: 20px;
     background-image: url("../image/meeting-cover-1.jpeg");
@@ -30,15 +31,19 @@ section{
     background-color: #FFFFFFBB;
     padding: 20px;
     float: right;
+ 
 }
 .mb{
     margin-bottom: 15px;
-    /* text-align: justify; */
+    font-size: 14px;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
     /* word-spacing: normal; */
 }
 h2{
     font-size: 18px;
     text-align:center !important;
+    
 }
 input,select{
     width: 100%;
@@ -59,11 +64,12 @@ footer{
 }
 .picture{
     width: 160px;
+   
 }
 .description{
     display: inline-block;
     color: white;
-    max-width: 40%;
+    max-width: 50%;
     text-align: justify;
     margin-left: 40px;
 }
@@ -72,4 +78,48 @@ footer{
 }
 .description h3{
     font-size: 24px;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 910px)  {
+	.title {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:568px) {
+    .title {
+        font-size: 16px;
+    }
+   
+}
+
+/* max device width */
+@media screen and (max-device-width: 480px) {
+	.description{
+        display: inline-block;
+        color: white;
+        max-width: 100%;
+        text-align: center;
+        margin-left: auto;
+    }
+    .formContainer{
+        max-width: 230px;
+        background-color: #FFFFFFBB;
+        padding: 20px;
+        float: center;
+    }
+    .picture{
+        width: 160px;
+        margin-bottom: 20px;
+    }
+    section{
+        padding: 20px;
+        background-image: url("../image/meeting-cover-1.jpeg");
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
 }
