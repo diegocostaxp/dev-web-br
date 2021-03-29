@@ -4,20 +4,20 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color:black;
+    background-color: black;
 }
 .conteiner{
     max-width: 1000px;
     margin: auto;
 }
 header{
-    background-color: rgb(128, 84, 216);
+    background-color: rgb(116, 116, 245);
     text-align: center;
-    color: white;
-    padding: 10px;
+    padding: 6px;
 }
 .title{
-    font-size: 26px;
+    font-size: 28px;
+    color: whitesmoke;
 }
 section{
     padding: 20px;
@@ -25,32 +25,31 @@ section{
     background-size: cover;
     overflow: hidden;
 }
-.formcontainer{
+.formContainer{
     max-width: 230px;
-    background-color:rgb(216, 210, 210);
+    background-color: #FFFFFFBB;
     padding: 20px;
     float: right;
 }
 .mb{
     margin-bottom: 15px;
-    margin-inline-start: initial;
-    margin-top: auto;
-    text-align: auto;
-    text-size-adjust: auto;
+    text-align: justify;
+    word-spacing: normal;
 }
 h2{
-    font-size: 16px;
+    font-size: 18px;
+    text-align:center !important;
 }
 input,select{
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 4px;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 input[type="submit"]{
-    color:rgb(255, 255, 255);
-    background-color:rgb(170, 152, 204);  
+    color: whitesmoke;
+    background-color: rgb(116, 116, 245);  
     font-weight: bold;  
 }
 select{
@@ -71,12 +70,12 @@ footer{
 }
 .description{
     display: inline-block;
-    text-align: right;
     color: white;
     max-width: 40%;
+    text-align: justify;
     margin-left: 40px;
 }
-.description p, .description{
+.description p, .description h3{
     margin-bottom: 20px;
 }
 .description h3{
