@@ -105,8 +105,40 @@
 // }
 
 //Repetição For e While
-var numero = 2;
-for(var vez= 0; vez < numero; vez++){
-    console.log("Executando o for")
-}
-console.log("Acabou")
+// var numero = 5;
+
+// for(var i= 10; i < numero; i++){
+
+//     console.log("Executando o for "+ i + " vez")
+//     i = 6;
+// }
+// console.log("Acabou" )
+
+// var numero = 5;
+
+// while(numero < 20){
+
+//     console.log("Numero " + numero);
+//     numero++;
+// }
+// console.log("Acabou" )
+
+// var numero = Math.random() * 100;
+
+// while(numero < 90){
+
+//     console.log(numero);    
+//     numero = Math.random() * 100;
+// }
+// console.log(numero);
+// console.log("Acabou")
+
+// Arrays"
+// var alunos = ["Albert", "Robert", "Jonh", "Lee", "Williams"];
+// console.log(alunos);
+
+// var alunos = ["Albert", "Robert", "Jonh", "Lee", "Williams"];
+// for (var i = 0; i < alunos.length; i++){
+//     console.log(alunos[i]);
+// }
+
