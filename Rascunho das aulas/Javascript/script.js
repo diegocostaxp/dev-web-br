@@ -142,3 +142,142 @@
 //     console.log(alunos[i]);
 // }
 
+//Função
+// function media(n1, n2) {
+// var nota1 = n1;
+// var nota2 = n2;
+// var media = (nota1 + nota2)/2;
+// // console.log(media);
+// return media;
+// }
+
+// var resultado1 = media(6, 7);
+// var resultado2 = media(8, 7);
+
+// console.log(resultado1 + " e " + resultado2);
+// console.log(resultado1 + resultado2);
+ 
+//Função parte2
+// var media = function (n1, n2){
+//     return (n1 + n2)/2;
+// }
+// var m = media(5, 6);
+
+// console.log(m);
+
+
+//primeiro método (Juntando tudo)
+
+// var nomes = ["Igor", "José", "Maria"];
+// var notasA = [7.0, 6.5, 9.5];
+// var notasB = [8.0, 7.0, 8.5];
+
+// function media(n1, n2){
+//     return(n1 + n2)/2
+// }
+
+// for (var index in nomes){
+
+//     console.log(nomes[index] +
+//     " - " + 
+//     notasA[index] +
+//     " - " +
+//     notasB[index] +
+//     " - " +
+//     media(notasA[index], notasB[index]));
+// }
+//segundo método do anterior (Juntando tudo)
+// var nomes = ["Igor", "José", "Maria"];
+// var notasA = [7.0, 6.5, 9.5];
+// var notasB = [8.0, 7.0, 8.5];
+
+// function passou(media){
+//     var resultado = "REPROVADO"
+//     if (media > 7){
+//         return "APROVADO";
+//     }else{
+//         return "REPROVADO";
+//     }
+// }
+
+// function media(n1, n2){
+//     return(n1 + n2)/2
+// }
+
+// for (var index in nomes){
+//     var nota1 = notasA[index];
+//     var nota2 = notasB[index];
+
+//     var m = media(nota1, nota2);
+
+//     console.log(nomes[index] +
+//     " - " + 
+//     nota1 +
+//     " - " +
+//     nota2 +
+//     " - " +
+//     m +
+//     " - " +
+//     passou(m));
+// }
+
+//Objeto - Propriedades
+// var alunoA = {
+//     nome: "JOAO",
+//     notas: [7.5, 5.6]
+// }
+// var alunoB = {
+//     nome: "IGOR",
+//     notas: [4.0, 9.5]
+// }
+
+// console.log(alunoA);
+// console.log(alunoB);
+
+
+// Objetos - Métodos
+//simulação 01
+
+// var aluno = {
+//     nome:"Igor",
+//     notas: [7, 8],
+
+//     media: function(n1, n2){
+//         return (n1 + n2)/2;
+//     }
+// }
+// var aluno1 = {
+//     nome:"João",
+//     notas: [6, 8],
+
+//     media: function(n1, n2){
+//         return (n1 + n2)/2;
+//     }
+// }
+// console.log(aluno.nome);
+// console.log(aluno.media(aluno.notas[0], aluno.notas[1]));
+
+// console.log(aluno1.nome);
+// console.log(aluno1.media(aluno1.notas[0], aluno1.notas[1]));
+
+//simulação 02
+
+function calcMedia(){
+    return(this.notas[0] + this.notas[1])/2;
+}
+var aluno = {
+    nome: "IGOR",
+    notas: [9, 8],
+    media: calcMedia
+}
+var aluno1 = {
+    nome: "JOAO",
+    notas: [5, 8],
+    media: calcMedia
+}
+console.log(aluno.nome);
+console.log(aluno.media());
+
+console.log(aluno1.nome);
+console.log(aluno1.media());
+
