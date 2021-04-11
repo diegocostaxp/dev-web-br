@@ -262,22 +262,56 @@
 
 //simulação 02
 
-function calcMedia(){
-    return(this.notas[0] + this.notas[1])/2;
-}
-var aluno = {
-    nome: "IGOR",
-    notas: [9, 8],
-    media: calcMedia
-}
-var aluno1 = {
-    nome: "JOAO",
-    notas: [5, 8],
-    media: calcMedia
-}
-console.log(aluno.nome);
-console.log(aluno.media());
+// function calcMedia(){
+//     return(this.notas[0] + this.notas[1])/2;
+// }
+// var aluno = {
+//     nome: "IGOR",
+//     notas: [9, 8],
+//     media: calcMedia
+// }
+// var aluno1 = {
+//     nome: "JOAO",
+//     notas: [5, 8],
+//     media: calcMedia
+// }
+// console.log(aluno.nome);
+// console.log(aluno.media());
 
-console.log(aluno1.nome);
-console.log(aluno1.media());
+// console.log(aluno1.nome);
+// console.log(aluno1.media());
 
+
+// Objetos - Construtores
+
+// function criarAlunos (nome, n1, n2){
+//     return{
+//         nome: nome,
+//         nota1: n1,
+//         nota2: n2,
+//         media: function(){
+//             return(this.nota1 + this.nota2)/2;
+//         }
+//     }
+// }
+
+// var turma = [
+//     criarAlunos ("IGOR", 9, 6),
+//     criarAlunos("JOAO", 7, 4),
+//     criarAlunos("Albert", 10, 6)
+// ]
+
+// var aluno = turma [0];
+
+// for (var aluno of turma){
+//     console.log(aluno.nome + " - " + aluno.media());
+// }
+
+//(continuação - OBJETOS CONSTRUTORES)
+
+// function obj(n, s){
+//     return{nome: n, sobrenome: s}
+// }
+
+// var a = obj("IGOR", "OLIVEIRA")
+// console.log(a);
