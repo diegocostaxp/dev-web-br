@@ -406,33 +406,3 @@
 // ela poderá ser modificada. Os exemplos mais comuns acontece
 // com aos arrays e objetos, todavia, não ocorre quando cria-se
 // um novo objeto afim de atribuí-lo.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
