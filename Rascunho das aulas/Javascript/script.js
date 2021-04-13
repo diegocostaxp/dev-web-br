@@ -315,3 +315,124 @@
 
 // var a = obj("IGOR", "OLIVEIRA")
 // console.log(a);
+
+
+// Diferenças entre var, Let e Const
+// Série de comandos para testar
+//01 -ok
+// if (true){
+//     var a = 10;
+// }
+// console.log(a)
+
+// //02 - erro
+// if (true){
+//     let a = 10;
+// }
+// console.log(a)
+
+// //03 -ok
+// if (true){
+//     let a = 10;
+//     console.log(a);
+// }
+
+// //04 - ?
+
+// //05 - ok
+// if (true){
+//     let a = 10;
+//     if (true){
+//         console.log(a);
+//     }
+// }
+
+// //06 - erro
+// if (true){
+//     let a = 10;
+//     if (true){
+
+//     }
+// }
+// console.log(a);
+
+// //07 - ok
+// if (true){
+//     var a = 10;
+//     if (true){
+
+//     }
+// }
+// console.log(a);
+
+// //08 - ok
+// const a = 20
+// console.log(a)
+
+// //09 - erro
+// if(true){
+//     const a = 20;
+// }
+// console.log(a)
+
+// //10 - ok = resp.: 10
+// if (true){
+//     let a =20;
+//     a = 10;
+//     console.log(a);
+// }
+
+// //11 - erro
+// if (true){
+//     const a = 20;
+//     a = 10;
+//     console.log (a);
+// }
+
+// //12 - erro
+// if (true){
+//     const a = { nome: "IGOR"};
+//     a = { nome: "JOSÉ"};
+//     console.log(a);
+// }
+
+// //13 - ok. resp.: JOSÉ
+// if(true){
+//     const a = {nome: "IGOR"};
+//     a.nome = "JOSÉ";
+//     console.log(a);
+// }
+// Resumindo: a constante não pode ser reatribuída, entretanto 
+// ela poderá ser modificada. Os exemplos mais comuns acontece
+// com aos arrays e objetos, todavia, não ocorre quando cria-se
+// um novo objeto afim de atribuí-lo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
