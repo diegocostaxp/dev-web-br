@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html id="01">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
         function h1click(){
             console.log("Executando a função")
         }
-    </script> -->
+    </script>
 
     function changeH1(){
         let h1 = document.getElementsByTagName("h1")[
@@ -21,8 +21,78 @@
     <!-- <h1 onclick="h1click()">Clique em mim</h1> -->
     <!-- <h1 onclick="this.style.color ='red'">Clique em mim</h1> -->
 
-    <input type="text" onchange="">
+    <!-- <input type="text" onchange="">
      
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script> -->
+<!-- </body>
+</html> -->
+
+<!-- Aula 18 - Js intermediário (Timer e intervalo) -->
+<!-- <!DOCTYPE html>
+<html id="01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo título</title>
+
+    <script>
+        function mudarCor() {
+            let h = document.getElementsByTagName("h1")[0];
+            h.style.color = "blue";
+        }
+        function mudarTexto() {
+            let h = document.getElementsByTagName("h1")[0];
+            h.innerHTML ="Novo título";
+            
+            setTimeout(mudarCor, 3000)
+
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Título Inicial</h1>
+    <input onclick="mudarTexto()" type="submit" value="mudar">
+    
+</body>
+</html> -->
+
+<!-- Aula 18 - Js intermediário (Timer e intervalo) parte 2  -->
+<!DOCTYPE html>
+<html id="01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo título</title>
+
+    <script>
+        var numero = 0;
+        var interval;
+
+        function atualizarTexto() {
+            let h = document.getElementsByTagName("h1")[0];
+            h.innerHTML += " " + numero; 
+            numero++;
+        }
+        
+        // * function mudarTexto() {
+        //     setInterval(atualizarTexto, 2000);
+        // }
+
+        function Iniciar(){
+            interval = setInterval(atualizarTexto, 1000);
+        }
+        function parar(){
+            clearInterval(interval);
+        }
+
+    </script>
+
+</head>
+<body>
+    <h1>Título Inicial</h1>
+    <!-- < * input onclick="mudarTexto()" type="submit" value="mudar"> -->
+    <input onclick="Iniciar()" type="submit" value="Iniciar">
+    <input onclick="parar()" type="submit" value="Parar">
 </body>
 </html>
