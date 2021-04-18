@@ -1,3 +1,37 @@
+<!-- // 05 - Acessando elementos HTML com Javascript -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Título</title>
+    
+    <style>
+        .paragrafo{
+            color: red;
+        }
+        span{
+            display: none;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Título</h1>
+    <p class="paragrafo" id="p1">Parágrafo1 <span>esse é o span
+    </p>
+    <p class="paragrafo">Parágrafo2</p> 
+    <p>Parágrafo3</p>   
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
 <!-- <!DOCTYPE html>
 <html id="01">
 <head>
@@ -94,25 +128,36 @@ JSON.parse => transforma o string (texto) em objeto; -->
 </body>
 </html> -->
 
-//Aula 16 - Local Storage 
-O local Storage permite salvar os dados (objetos e strings)
+<!-- //Aula 16 - Local Storage  -->
+<!-- O local Storage permite salvar os dados (objetos e strings)
 mesmo depois de atualizar o navegador.
-LocalStorage.setIten() => ARMAZENA os dados no navegador;
-LocalStorage.getIten() => EXECUTA os dados salvos no navegador;
-LocalStorage.removeIten() => APAGA os dados salvos no navegador;
+LocalStorage.setItem() => ARMAZENA os dados no navegador;
+LocalStorage.getItem() => EXECUTA os dados salvos no navegador;
+LocalStorage.removeItem() => APAGA os dados salvos no navegador; -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function atualizar(element){
+           let valor = element.value;
+           console.log(valor)
+
+           let h1 = document.getElementById("nome");
+           h1.innerHTML = valor;
+        }
+    </script>
+
 </head>
 <body>
+    <h1 id="nome"></h1>
+    <input type="text" oninput="atualizar(this)">
     
 </body>
-</html>
+</html> -->
 
 
 
@@ -154,4 +199,4 @@ LocalStorage.removeIten() => APAGA os dados salvos no navegador;
     <input onclick="Iniciar()" type="submit" value="Iniciar">
     <input onclick="parar()" type="submit" value="Parar">
 </body>
-</html> --> -->
+</html> -->
